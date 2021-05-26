@@ -2,4 +2,7 @@
 
 print("Rock, Paper, Scissors, Shoot!")
 
-print("I am ", 10, " Years old")
+
+user_choice = input("Please choose on of 'rock', 'paper', 'scissor' ")
+
+print("User Choice: ", user_choice)
