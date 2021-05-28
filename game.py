@@ -23,7 +23,7 @@ while play_again == "yes":
     #Opted for while loop to allow user to enter multiple values rather than exit program
     while user_choice not in ("rock", "paper", "scissor"):
         print("You selection is invalid")
-        user_choice = input("Please choose rock paper or scissor ")
+        user_choice = input("Please choose 'rock', 'paper', or 'scissor' ")
     print(f"You have selected {user_choice}")
 
 
