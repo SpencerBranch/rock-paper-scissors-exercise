@@ -2,6 +2,7 @@
 
 # Enter your player name by updating the .env file
 # Replace "Your_Name" with desired user name
+# Note .gitignore file already contain .env file type**
 PLAYER_NAME="Your_Name"
 
 # Create a new environment
