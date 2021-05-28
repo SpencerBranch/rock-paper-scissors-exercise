@@ -1,10 +1,18 @@
 # game.py
 #Import Modules
 import random
+import os
+import dotenv
 
+#Get player name from .env file
+dotenv.load_dotenv()
+PLAYER_NAME = os.getenv("PLAYER_NAME")
 
 #Initial Game Heading
-print("Rock, Paper, Scissors, Shoot!")
+print("---------")
+print(f"Welcome {PLAYER_NAME} to Rock, Paper, Scissors")
+print("---------")
+
 
 
 user_choice = input("Please choose on of 'rock', 'paper', 'scissor' ")
