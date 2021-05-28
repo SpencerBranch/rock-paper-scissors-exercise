@@ -39,4 +39,4 @@ else:
     print("The Computer has won")
 
 
-print("This is the nend of our game.  Please play again")
+print("Thanks for playing, please play again soon!")
