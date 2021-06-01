@@ -33,13 +33,39 @@ while play_again == "yes":
     #Output Computer's choice
     print("The computer chose ", comp)
 
-    #Logic for choosing winner
-    if user_choice == comp:
-        print("The game ends in a draw")
-    elif (user_choice == "rock" and comp == "scissor") or (user_choice == "scissor" and comp == "paper") or (user_choice == "paper" and comp == "rock"):
-        print("Player has won the game")
+    winners = {
+        "rock": {
+            "rock": None,
+            "paper": "paper",
+            "scissor": "rock",
+        },
+        "paper": {
+            "rock": "paper",
+            "paper": None,
+            "scissor": "scissor"
+        },
+        "scissor": {
+            "rock": "rock",
+            "paper": "scissor",
+            "scissor": None,
+        }
+    }
+
+    winner = winners[user_choice][comp]
+    if winner == user_choice:
+        print("YOU WON!")
+    elif winner == comp:
+        print("YOU LOST")
     else:
-        print("The Computer has won")
+        print("TIE")
+
+   #     #Logic for choosing winner
+    #    if user_choice == comp:
+    #        print("The game ends in a draw")
+    #   elif (user_choice == "rock" and comp == "scissor") or (user_choice == "scissor" and comp == "paper") or (user_choice == "paper" and comp == "rock"):
+    #      print("Player has won the game")
+    #    else:
+    #        print("The Computer has won")
     play_again = input("would you like to play again? (yes/no) ")
 
 
